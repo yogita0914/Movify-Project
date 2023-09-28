@@ -1,0 +1,77 @@
+.navbarParent{
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em;
+    height: 3.5em;
+    box-shadow:  var(--navbar-box-shadow);
+    background-color: var(--navbar-background-color);
+}
+
+
+.navbarLogo{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.navbarTitle{
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--navbar-title-background);
+    background: var(--navbar-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.navbarSearch{
+    display: flex;
+    gap: 0.5em;
+    flex-basis: 25%;
+    border-bottom: 2px solid var(--navbar-input-color);
+}
+
+.navbarSearch input{
+    font-size: 1em;
+    color: var(--primary-text-color);
+
+}
+
+.themeIcons{
+    cursor: pointer;
+
+}
+@media (max-width:670px) {
+    .navbarParent{
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width:550px) {
+    .navbarParent{
+        font-size: 10px;
+    }
+    
+}
+
+
+@media (max-width:450px ) {
+    .navbarParent{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:360px) {
+    .navbarParent{
+        font-size: 7px;
+    }
+    
+}

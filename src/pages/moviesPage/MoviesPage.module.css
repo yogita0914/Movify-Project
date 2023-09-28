@@ -1,0 +1,9 @@
+
+.moviesParent{
+    display: flex;
+    margin: 5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

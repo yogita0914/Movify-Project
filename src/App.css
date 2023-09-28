@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* Basic CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --primary-text-color: #1a1a1a;
+    --primary-background-color: #ffffff;
+    --secondary-text-color: #949fb7;
+    --movie-type-chip-bg-color: rgb(189, 43, 43);
+    --movie-imdb-rating-chip-bg-color: rgb(44, 145,29);
+    --navbar-box-shadow: #627a96 0px 4px 2px -2px;
+    --navbar-background-color: #fff;
+    --navbar-title-background: #478da8;
+    --navbar-title-gradient: linear-gradient(to right, #478da8 0%, #104c91 100%);
+    --navbar-logo-color: #1c7d9b;
+    --navbar-input-color: rgb(62, 60, 60);
+    --movie-child-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --single-movie-component-movie-card-shadow: 0 0 10px #627a96;
+    --single-movie-component-details-color: #0a3566 ;
+}
+.darkMode{
+    --primary-text-color: #f5f5f5;
+    --primary-background-color: #363434;
+    --secondary-text-color: #fff6f6;
+    --movie-type-chip-bg-color: rgb(189, 43, 43);
+    --movie-imdb-rating-chip-bg-color: rgb(44, 145,29);
+    --navbar-box-shadow:  0 2px 2px -2px rgba(192, 184, 184, 0.966);
+    --navbar-background-color: #4b4848ea;
+    --navbar-title-background: #f6f8f9;
+    --navbar-title-gradient: #f6f8f9;
+    --navbar-logo-color: #757679;
+    --navbar-input-color: #f5f5f5da;
+    --movie-child-box-shadow: 0 0 9px rgb(179, 174,174);
+    --single-movie-component-movie-card-shadow: 0 0 10px rgb(179, 174,174);
+    --single-movie-component-details-color: #8897ae;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: var(--secondary-text-color);
+    background: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: var(--secondary-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}

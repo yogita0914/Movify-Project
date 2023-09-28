@@ -1,0 +1,90 @@
+.movieCard{
+    font-size: 1em;
+    margin: 6em 2em 2em 2em;
+    box-shadow: var(--single-movie-component-movie-card-shadow);
+    display: flex;
+    height: 30em;
+    cursor: pointer;
+    border-radius: 1em;
+    transition: all 0.3s linear;
+    gap: 1em;
+}
+
+.movieCard:hover{
+    transform: scale(1.02);
+
+}
+.poster{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    object-fit: fill;
+    flex-basis: 40%;
+}
+
+.ratingTypingWrap{
+    display: flex;
+    gap: 1em;
+}
+
+.movieType span, .rating span{
+    color: var(--primary-background-color);
+    padding: 0.3em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+}
+
+.movieType span{
+    background-color: var(--movie-type-chip-bg-color);
+}
+
+.rating span{
+    background-color: var(--movie-imdb-rating-chip-bg-color) ;
+}
+
+.details{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    overflow-y: scroll;
+}
+
+.details span{
+    font-weight: bold;
+}
+
+.details p{
+    color: var(--single-movie-component-details-color)
+}
+
+.details::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:670px) {
+    .movieCard{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:450px ) {
+    .movieCard{
+        font-size: 10px;
+        flex-direction: column;
+        height: 50em;
+        gap: 1em;
+    }
+    .poster{
+        border-radius: 1em 1em 0 0;
+        height: 25em;
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width:310px) {
+    .movieCard{
+        font-size: 5px;
+    }
+    
+}
